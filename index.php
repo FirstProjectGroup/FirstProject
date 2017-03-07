@@ -9,7 +9,7 @@
 
 <body>
   
-    <div class="loginpage">
+    <div class="loginPage">
         
         <form>
             
