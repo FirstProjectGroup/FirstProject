@@ -14,12 +14,12 @@
         <form>
             
             Username/Email:
-            <input type="text" name="username"></br>
+            <input type="text" name="username" placeholder = "Enter your username."></br>
             Password:
-            <input type="password" name="password"></br>
+            <input type="password" placeholder = "Enter your password" name="password"></br>
             <input type="Submit" value="Login">
+            </br>
             <input type="reset" name="password">
-            
         </form>
         
     </div>
