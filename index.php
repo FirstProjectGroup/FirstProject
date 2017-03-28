@@ -11,7 +11,7 @@
   
     <div class="loginPage">
         
-        <form>
+        <form method="post" >
             
             Username/Email:
             <input type="text" name="username" placeholder = "Enter your username."></br>
@@ -20,6 +20,7 @@
             <input type="Submit" value="Login">
             </br>
             <input type="reset" name="password">
+    
         </form>
         
     </div>
