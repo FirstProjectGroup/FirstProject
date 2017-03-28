@@ -11,19 +11,31 @@
   
     <div class="loginPage">
         
-        <form>
+        <form action = "index.php" , method = "get">
             
             Username/Email:
-            <input type="text" name="username"></br>
-            Password:
-            <input type="password" name="password"></br>
-            <input type="Submit" value="Login">
-            <input type="reset" name="password">
+            <input type="text" name="username" placeholder = "Enter your username.">
             
+            </br>
+            Password:
+            <input type="password" placeholder = "Enter your password" name="password"></br>
+            <input type="Submit" value="Login">
+            </br>
+            <input type="reset" name="password">
         </form>
         
     </div>
-    
+    <?php
+    if ($_GET ["username"] != null && $_GET ["password"] != null){
+        if ($_GET ["username"] == "admin" && $_GET ["password"] == "admin"){
+            header( 'Location: admin.php' );
+        }
+        if ($_GET ["username"] != "admin" || $_GET ["password"] != "admin")
+        {
+            echo "用户名或密码输入不正确。";
+        }
+    }
+        ?>
 </body>
 
 </html>
