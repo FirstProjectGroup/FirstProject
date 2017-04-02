@@ -1,41 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html >
 <head>
-  <title>Log In</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
-  
-    <div class="loginPage">
-        
-        <form action = "index.php" , method = "get">
-            
-            Username/Email:
-            <input type="text" name="username" placeholder = "Enter your username.">
-            
-            </br>
-            Password:
-            <input type="password" placeholder = "Enter your password" name="password"></br>
-            <input type="Submit" value="Login">
-            </br>
-            <input type="reset" name="password">
-        </form>
-        
-    </div>
+    <div class="wrapper" id="loginPage">
     <?php
-    if ($_GET ["username"] != null && $_GET ["password"] != null){
-        if ($_GET ["username"] == "admin" && $_GET ["password"] == "admin"){
-            header( 'Location: admin.php' );
-        }
-        if ($_GET ["username"] != "admin" || $_GET ["password"] != "admin")
-        {
-            echo "用户名或密码输入不正确。";
-        }
-    }
-        ?>
+        require('Login.php');
+    ?>
+    <form class="form-signin" id="myForm" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">       
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="username" placeholder="Enter your username" id="username" name="username" required="" autofocus="" />
+        
+      <input type="password" class="form-control" name="password" placeholder="Password" id="pwd" name="pwd" required=""/>      
+        <span class="error">* <?php echo "<font color=\"red\"> $Err  </font>";?></span><br/>
+      
+      <input type="submit" id="Login" class="btn btn-lg btn-primary btn-block" />
+      <input type="reset" class="btn btn-lg btn-primary btn-block"/>
+    </form>
+  </div>
+  
+  
 </body>
-
 </html>
