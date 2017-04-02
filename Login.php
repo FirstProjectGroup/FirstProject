@@ -1,5 +1,9 @@
 <?php
     require('Connection.php');
+<<<<<<< HEAD
+=======
+    require('CleanInput.php');
+>>>>>>> origin/yunkai
     //session_start();
      /////////////////////PHP//////////////////////
      
@@ -43,6 +47,7 @@ if($checking){
     
 $con->close();
     
+<<<<<<< HEAD
     
 function test_input($data) {
    $data = trim($data);
@@ -50,6 +55,8 @@ function test_input($data) {
    $data = htmlspecialchars($data);
    return $data;
 }
+=======
+>>>>>>> origin/yunkai
 
     /////////////////////PHP//////////////////////
 ?>

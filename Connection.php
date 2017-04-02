@@ -4,7 +4,11 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
+<<<<<<< HEAD
 $dbName = "super_admin";
+=======
+$dbName = "CRManagement";
+>>>>>>> origin/yunkai
 
 $con = mysqli_connect($servername, $username, $password, $dbName);
 

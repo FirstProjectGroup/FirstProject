@@ -2,12 +2,20 @@
 <html >
 <head>
   <meta charset="UTF-8">
+<<<<<<< HEAD
   <title>Bootstrap Snippet: Login Form</title>
+=======
+  <title>Login</title>
+>>>>>>> origin/yunkai
   
   
   <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
 
+<<<<<<< HEAD
       <link rel="stylesheet" href="css/style.css">
+=======
+  <link rel="stylesheet" href="css/style.css">
+>>>>>>> origin/yunkai
 
   
 </head>

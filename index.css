@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background: #eee !important;
 }
@@ -42,3 +43,49 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+=======
+body {
+  background: #eee !important;
+}
+
+.loginPage {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.myForm {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.myForm .formLoginHeading,{
+  margin-bottom: 30px;
+}
+.myForm {
+  font-weight: normal;
+}
+.myForm .formControl {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.myForm .formControl:focus {
+  z-index: 2;
+}
+.myForm input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.myForm input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+>>>>>>> origin/yunkai
